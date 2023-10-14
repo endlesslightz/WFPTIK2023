@@ -3,13 +3,13 @@
     <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
         <div class="position-sticky">
             <div class="list-group list-group-flush mx-3 mt-4">
-                <a href="/" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halDashboard") ? "active" : "" ?>" aria-current="true">
+                <a href="<?php echo base_url('/'); ?>" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halDashboard") ? "active" : "" ?>" aria-current="true">
                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
                 </a>
-                <a href="buku" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halBuku") ? "active" : "" ?>">
+                <a href="<?php echo base_url('/buku'); ?>" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halBuku") ? "active" : "" ?>">
                     <i class="fas fa-chart-area fa-fw me-3"></i><span>Buku</span>
                 </a>
-                <a href="user" class="list-group-item list-group-item-action py-2 ripple">
+                <a href="<?php echo base_url('/user'); ?>" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halUser") ? "active" : "" ?>">
                     <i class="fas fa-users fa-fw me-3"></i><span>Users</span>
                 </a>
             </div>

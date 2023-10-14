@@ -9,22 +9,7 @@ class Dashboard extends BaseController
     public function index(): string
     {
         $data = [
-            'menu' => 'halDashboard',
-            'mahasiswa' => array(
-                [
-                    'nama' => 'budi',
-                    'nim' => 'K3520000',
-                    'ipk' => 3.5
-                ], [
-                    'nama' => 'dani',
-                    'nim' => 'K3520001',
-                    'ipk' => 3.6
-                ], [
-                    'nama' => 'randy',
-                    'nim' => 'K3520002',
-                    'ipk' => 3.7
-                ]
-            )
+            'menu' => 'halDashboard'
         ];
         return view('dashboard', $data);
     }
