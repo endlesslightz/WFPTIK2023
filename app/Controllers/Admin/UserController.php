@@ -25,7 +25,7 @@ class UserController extends BaseController
             // 'user' => $usermodel->find(102)
             // keluarnya 1d array-->cocok dipakai jika kita hanya ingin panggil detail
         ];
-        return view('user', $data);
+        return view('user/user', $data);
     }
 
     public function detail($id)
@@ -35,6 +35,6 @@ class UserController extends BaseController
             'user' => $this->usermodel->find($id)
         ];
         // var_dump($data);
-        return view('detailuser', $data);
+        return view('user/detailuser', $data);
     }
 }
