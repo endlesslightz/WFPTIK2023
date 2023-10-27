@@ -9,10 +9,12 @@
                     <h5 class="mb-0 text-center"><strong>Nama Mahasiswa</strong></h5>
                 </div>
                 <div class="card-body">
+                    <a href="/createuser" class="btn btn-success">Tambah Data</a>
                     <table class="table">
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
+                            <th>Avatar</th>
                             <th>Alamat</th>
                             <th>TTL</th>
                             <th>Telepon</th>
@@ -24,10 +26,11 @@
                             <tr>
                                 <td><?php echo $i++; ?></td>
                                 <td><?php echo $u['nama'] ?></td>
+                                <td><img src="/img/<?php echo $u['avatar'] ?>" width="100px"></td>
                                 <td><?php echo $u['alamat'] ?></td>
                                 <td><?php echo $u['tempat_lahir'] . ", " . $u['tanggal_lahir'] ?></td>
                                 <td><?php echo $u['telepon'] ?></td>
-                                <td><button class="button btn-primary"><a href="<?php echo "/user/" . $u['id']; ?>"> Detail</a></button></td>
+                                <td><a href="<?php echo "/user/" . $u['id']; ?>"><button class="btn btn-primary"> Detail</button></a></td>
                             </tr>
                         <?php } ?>
                     </table>

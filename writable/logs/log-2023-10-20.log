@@ -1,0 +1,12 @@
+CRITICAL - 2023-10-20 10:22:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\user\detail.php on line 9.
+ 1 APPPATH\Views\user\detail.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\code\\codeigniter4\\app\\Views\\user\\detail.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\code\\codeigniter4\\app\\Views\\user\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/detail', [], true)
+ 5 APPPATH\Controllers\Admin\UserController.php(38): view('user/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\UserController->detail('danau.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\code\\codeigniter4\\public\\index.php')
