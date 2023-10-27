@@ -13,7 +13,6 @@
                     <table class="table">
                         <tr>
                             <th>No</th>
-                            <th>Avatar</th>
                             <th>Nama</th>
                             <th>Avatar</th>
                             <th>Alamat</th>
@@ -26,7 +25,6 @@
                         foreach ($user as $u) { ?>
                             <tr>
                                 <td><?php echo $i++; ?></td>
-                                <td><img src="/ava/<?php echo $u['avatar'] ?>" width="100px"></td>
                                 <td><?php echo $u['nama'] ?></td>
                                 <td><img src="/img/<?php echo $u['avatar'] ?>" width="100px"></td>
                                 <td><?php echo $u['alamat'] ?></td>
