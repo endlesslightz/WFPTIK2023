@@ -48,6 +48,31 @@ class UserController extends BaseController
 
     public function insert()
     {
+        $validasi = \Config\Services::validation();
+        $valid = $this->validate([
+            'nama_depan' => [
+                'label' => 'Nama Depan',
+                'rules' => 'required|min_length[3]',
+                'errors' => [
+                    'required' => '{field} tidak boleh kosong',
+                    'min_length' => '{field} minimal 10 karakter'
+                ]
+            ],
+            'nama_belakang' => [
+                'label' => 'Nama Belakang',
+                'rules' => 'required',
+                'errors' => ['required' => '{field} tidak boleh kosong']
+            ]
+        ]);
+        if (!$valid) {
+            $pesan = [
+                'error' => [
+                    'namadepan' => $validasi->getError('nama_depan'),
+                    'namabelakang' => $validasi->getError('nama_belakang'),
+                ]
+            ];
+            return $this->response->setJSON($pesan);
+        } else {
         $nama = $this->request->getVar('nama_depan') . ' ' . $this->request->getVar('nama_belakang');
         if ($this->request->getFile('avatar')->getName() != '') {
             $avatar = $this->request->getFile('avatar');
@@ -68,7 +93,24 @@ class UserController extends BaseController
         ];
 
         $this->usermodel->save($data);
-
-        return redirect()->to('/user');
+            $pesan = [
+                'sukses' => 'Data anggota berhasil diinput'
+            ];
+            return $this->response->setJSON($pesan);
+    }
+    }
+    
+    public function getData(){
+        if($this->request->isAJAX()){
+            $data=[
+                'user'=>$this->usermodel->findAll()
+            ] ;  
+            $hasil=[
+                'data'=>view('user/list',$data)
+            ];
+                }else{
+                exit('Data tidak dapat diload');
+        }
+        return $this->response->setJSON($hasil);    
     }
 }
