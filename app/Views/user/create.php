@@ -58,6 +58,22 @@
                             <label class="form-label" for="form6Example6">Telepon</label>
                         </div>
 
+                         <!-- otentikasi input -->
+                         <div class="form-outline mb-4">
+                            <input type="text" id="form6Example7" class="form-control" name="username" />
+                            <label class="form-label" for="form6Example7">Username</label>
+                        </div>
+
+                         <div class="form-outline mb-4">
+                            <input type="password" id="form6Example8" class="form-control" name="password" />
+                            <label class="form-label" for="form6Example8">Password</label>
+                        </div>
+
+                         <div class="form-outline mb-4">
+                            <input type="password" id="form6Example9" class="form-control" name="upassword" />
+                            <label class="form-label" for="form6Example9">Ulangi Password</label>
+                        </div>
+
 
                         <div class="form-outline mb-4">
                             <input type="file" id="form6Example6" class="form-control" name="avatar" />

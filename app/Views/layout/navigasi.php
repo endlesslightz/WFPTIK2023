@@ -12,6 +12,10 @@
                 <a href="<?php echo base_url('/user'); ?>" class="list-group-item list-group-item-action py-2 ripple <?php echo ($menu === "halUser") ? "active" : "" ?>">
                     <i class="fas fa-users fa-fw me-3"></i><span>Users</span>
                 </a>
+
+                <a href="<?= base_url('/keluar') ?>" class="list-group-item list-group-item-action py-2 ripple">
+                                <i class="fas fa-logout fa-fw me-3 >"></i><span>Logout</span>
+                    </a>
             </div>
         </div>
     </nav>
