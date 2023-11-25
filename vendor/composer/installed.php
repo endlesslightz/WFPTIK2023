@@ -3,7 +3,7 @@
         'name' => 'codeigniter4/framework',
         'pretty_version' => 'dev-angk2020',
         'version' => 'dev-angk2020',
-        'reference' => 'e51bdac409b44e9ef550a6a55dd1d39b75483453',
+        'reference' => 'ff15cf8bc6a7f57d510a446dbe19db65c43e90b7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'codeigniter4/framework' => array(
             'pretty_version' => 'dev-angk2020',
             'version' => 'dev-angk2020',
-            'reference' => 'e51bdac409b44e9ef550a6a55dd1d39b75483453',
+            'reference' => 'ff15cf8bc6a7f57d510a446dbe19db65c43e90b7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

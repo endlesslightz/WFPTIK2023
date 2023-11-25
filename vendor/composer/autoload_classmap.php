@@ -369,6 +369,7 @@ return array(
     'CodeIgniter\\Validation\\StrictRules\\CreditCardRules' => $baseDir . '/system/Validation/StrictRules/CreditCardRules.php',
     'CodeIgniter\\Validation\\StrictRules\\FileRules' => $baseDir . '/system/Validation/StrictRules/FileRules.php',
     'CodeIgniter\\Validation\\StrictRules\\FormatRules' => $baseDir . '/system/Validation/StrictRules/FormatRules.php',
+    'CodeIgniter\\Validation\\StrictRules\\PasswordStrength' => $baseDir . '/system/Validation/StrictRules/PasswordStrength.php',
     'CodeIgniter\\Validation\\StrictRules\\Rules' => $baseDir . '/system/Validation/StrictRules/Rules.php',
     'CodeIgniter\\Validation\\Validation' => $baseDir . '/system/Validation/Validation.php',
     'CodeIgniter\\Validation\\ValidationInterface' => $baseDir . '/system/Validation/ValidationInterface.php',

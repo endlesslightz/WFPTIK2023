@@ -1,4 +1,3 @@
-
 <table id="user">
     <thead>
     <tr>
@@ -17,7 +16,12 @@
         <tr>
             <td><?php echo $i++; ?></td>
             <td><?php echo $u['nama'] ?></td>
-            <td><img src="/images/avatar/<?php echo $u['avatar'] ?>" width="100px"></td>
+            <td>
+            <?php if (!file_exists(ROOTPATH."public\images\avatar\\".$u['avatar'] )) { ?>
+                <img src="<?= $u['avatar'] ?>" width="100px"></td>
+            <?php } else { ?>
+            <img src="<?= base_url('/images/avatar/'.$u['avatar']) ?>" width="100px"></td>
+            <?php  } ?>
             <td><?php echo $u['alamat'] ?></td>
             <td><?php echo $u['tempat_lahir'] . ", " . $u['tanggal_lahir'] ?></td>
             <td><?php echo $u['telepon'] ?></td>

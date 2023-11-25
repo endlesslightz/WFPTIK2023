@@ -14,7 +14,7 @@
                 </a>
 
                 <a href="<?= base_url('/keluar') ?>" class="list-group-item list-group-item-action py-2 ripple">
-                                <i class="fas fa-logout fa-fw me-3 >"></i><span>Logout</span>
+                                <i class="fas fa-arrow-left fa-fw me-3 >"></i><span>Logout</span>
                     </a>
             </div>
         </div>

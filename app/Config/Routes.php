@@ -20,3 +20,6 @@ $routes->delete('/user/delete/(:segment)', 'Admin\UserController::delete/$1'); /
 $routes->get('/otentikasi', 'Otentikasi::index',['filter'=>'noauth']); //halaman login
 $routes->post('/masuk', 'Otentikasi::login'); //halaman login
 $routes->get('/keluar', 'Otentikasi::logout'); //halaman login
+
+
+$routes->get('/faker', 'testFaker::index'); //halaman faker

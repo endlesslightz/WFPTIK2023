@@ -609,6 +609,7 @@ class ComposerStaticInitacaa47c167fd5395eb41cc209533f332
         'CodeIgniter\\Validation\\StrictRules\\CreditCardRules' => __DIR__ . '/../..' . '/system/Validation/StrictRules/CreditCardRules.php',
         'CodeIgniter\\Validation\\StrictRules\\FileRules' => __DIR__ . '/../..' . '/system/Validation/StrictRules/FileRules.php',
         'CodeIgniter\\Validation\\StrictRules\\FormatRules' => __DIR__ . '/../..' . '/system/Validation/StrictRules/FormatRules.php',
+        'CodeIgniter\\Validation\\StrictRules\\PasswordStrength' => __DIR__ . '/../..' . '/system/Validation/StrictRules/PasswordStrength.php',
         'CodeIgniter\\Validation\\StrictRules\\Rules' => __DIR__ . '/../..' . '/system/Validation/StrictRules/Rules.php',
         'CodeIgniter\\Validation\\Validation' => __DIR__ . '/../..' . '/system/Validation/Validation.php',
         'CodeIgniter\\Validation\\ValidationInterface' => __DIR__ . '/../..' . '/system/Validation/ValidationInterface.php',
