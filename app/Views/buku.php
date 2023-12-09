@@ -9,24 +9,7 @@
                     <h5 class="mb-0 text-center"><strong>Daftar Buku</strong></h5>
                 </div>
                 <div class="card-body">
-                    <table class="table">
-                        <tr>
-                            <th>No</th>
-                            <th>Judul</th>
-                            <th>pengarang</th>
-                            <th>Penerbit</th>
-                        </tr>
-                        <?php
-                        $i = 0;
-                        foreach ($buku as $b) { ?>
-                            <tr>
-                                <td><?php echo $i++; ?></td>
-                                <td><?php echo $b['judul'] ?></td>
-                                <td><?php echo $b['pengarang'] ?></td>
-                                <td><?php echo $b['penerbit'] ?></td>
-                            </tr>
-                        <?php } ?>
-                    </table>
+                   <?= $output; ?>
                 </div>
             </div>
         </section>

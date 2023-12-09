@@ -122,7 +122,7 @@ class UserController extends BaseController
             'telepon' => $this->request->getVar('telepon'),
             'email' => $this->request->getVar('email'),
             'username' => $this->request->getVar('username'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'password' => md5($this->request->getVar('password')),
             'avatar' => $namaavatar
         ];
 

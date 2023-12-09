@@ -6,7 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Admin\Dashboard::index',['filter'=>'auth']); //halaman panel
-$routes->get('/buku', 'Admin\Dashboard::buku',['filter'=>'auth']); //halaman panel buku
+$routes->get('/buku', 'Admin\BukuController::index',['filter'=>'auth']); //halaman panel buku
+$routes->get('/buku/(:any)', 'Admin\BukuController::index/$1',['filter'=>'auth']); //halaman add buku
+$routes->post('/buku/(:any)', 'Admin\BukuController::index/$1',['filter'=>'auth']); //halaman modify buku
+
 $routes->get('/user', 'Admin\UserController::index',['filter'=>'auth']); //halaman panel user
 $routes->get('/user/data', 'Admin\UserController::getData'); //ambil data tabel user
 $routes->get('/user/tambah', 'Admin\UserController::tambah'); // tampil form insert user

@@ -20,9 +20,11 @@
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
         <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
         <link rel="stylesheet" href=<?= base_url('/node_modules/sweetalert2/dist/sweetalert2.min.css') ?> >
-
-    <?php } ?>
-</head>
+    <?php } else if($menu=='halBuku'){ 
+        foreach($css_files as $file): ?>
+        <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+    <?php endforeach; } ?>
+    </head>
 
 <body>
     <!--Main Navigation-->
@@ -38,6 +40,11 @@
     <!-- Custom scripts -->
 
     <script src=<?= base_url('/node_modules/sweetalert2/dist/sweetalert2.min.js') ?> ></script>
+    <?php if($menu=='halBuku'){ ?>
+    <?php foreach($js_files as $file): ?>
+        <script src="<?php echo $file; ?>"></script>
+    <?php endforeach; ?>
+    <?php } ?>
 </body>
 
 </html>
